@@ -9,3 +9,157 @@ body {
     min-height: 100vh;
     display: flex;
 }
+
+button:hover {
+    filter: brightness(80%);
+    scale: 1.5;
+}
+
+aside {
+    height: 100%;
+    width: 0;
+    padding: 0;
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+    overflow-x: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 1s;
+    white-space: nowrap;
+}
+
+.exit {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #3584E4;
+    color: #DFF6FF;
+    transition: 0.4s;
+}
+
+form {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.formDivs {
+    padding-bottom: 1rem;
+}
+
+.formDivs label {
+    font-size: 1.5rem;
+    color: #8b8b8b;
+}
+
+.formDivs label:not(:last-child) {
+    display: block;
+}
+
+.formDivs input[type=text],
+.formDivs input[type=number] {
+    width: 100%;
+    font-size: 1.5rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid #e7e7e7;
+}
+
+.formDivs input[type=text]:focus,
+.formDivs input[type=number]:focus {
+    outline: none;
+    transition: 0.5s;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+}
+
+.formDivs input[type=checkbox] {
+    height: 22px;
+    width: 22px;
+}
+
+.formDivs:last-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.formDivs:nth-last-child(2) {
+    padding-bottom: 3rem;
+}
+
+#form button[type=submit] {
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    color: #DFF6FF;
+    background-color: #3584E4;
+    transition: 0.4s;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 2rem;
+}
+
+#addBookButton {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    color: #DFF6FF;
+    background-color: #3584E4;
+    font-size: 1.5rem;
+    transition: 0.4s;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.card {    
+    padding: 1rem;
+    border-radius: 5px;
+    border-bottom: 8px solid #09661a;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.icons input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.icons span:hover {
+    cursor: pointer;
+}
+
+.text {
+    padding-bottom: 1rem;
+}
+
+.text :first-child {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
